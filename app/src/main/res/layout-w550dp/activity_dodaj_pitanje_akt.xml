@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ba.unsa.etf.aktivnosti.DodajPitanjeAkt">
+
+    <EditText
+        android:id="@+id/etNaziv"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Naziv pitanja - INPUT"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:text="Odgovori"
+        android:textAlignment="center"
+        android:textColor="#FF044139"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNaziv" />
+
+    <ListView
+        android:id="@+id/lvOdgovori"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <EditText
+        android:id="@+id/etOdgovor"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Odgovor"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvOdgovori" />
+
+    <Button
+        android:id="@+id/btnDodajOdgovor"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="Dodaj"
+        android:textColor="#FF13516C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etOdgovor" />
+
+    <Button
+        android:id="@+id/btnDodajTacan"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:text="Dodaj tacan"
+        android:textAlignment="center"
+        android:textColor="#FFFF66"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDodajOdgovor" />
+
+    <Button
+        android:id="@+id/btnDodajPitanje"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:text="SPASI PITANJE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDodajTacan" />
+
+
+</android.support.constraint.ConstraintLayout>
